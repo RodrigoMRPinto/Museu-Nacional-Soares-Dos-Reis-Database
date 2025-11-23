@@ -207,7 +207,7 @@ CREATE TABLE Visit (
     visitDate DATE,
     partySize INTEGER,
     discount  REAL,
-    visitorID INTEGER NOT NULL, --(Remoção de Unique)
+    visitorID INTEGER NOT NULL, 
     FOREIGN KEY (visitorID) REFERENCES Visitor(visitorID)
         ON UPDATE CASCADE
         ON DELETE RESTRICT
