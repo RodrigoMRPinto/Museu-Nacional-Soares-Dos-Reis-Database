@@ -6,7 +6,6 @@
 
 PRAGMA foreign_keys = ON;
 
--- DROP TABLES (first those who have FKs)
 DROP TABLE IF EXISTS Experience;
 DROP TABLE IF EXISTS Favourite;
 DROP TABLE IF EXISTS StaffRoomNumber;
@@ -26,11 +25,6 @@ DROP TABLE IF EXISTS Warehouse;
 DROP TABLE IF EXISTS Room;
 DROP TABLE IF EXISTS Person;
 
--- Alteração da Ordem de criação das  tabelas
-
-------------------------------------------------------------
--- Tabelas base (sem foreign keys)
-------------------------------------------------------------
 
 CREATE TABLE Person (
     personID INTEGER PRIMARY KEY,
@@ -74,10 +68,6 @@ CREATE TABLE Feedback (
     suggestions TEXT
 );
 
-------------------------------------------------------------
--- Especializações de Person
-------------------------------------------------------------
-
 CREATE TABLE Artist (
     artistID INTEGER PRIMARY KEY,
     personID INTEGER NOT NULL UNIQUE,
@@ -111,10 +101,6 @@ CREATE TABLE Visitor (
         ON DELETE RESTRICT
 );
 
-------------------------------------------------------------
--- Dependentes de Event / Room
-------------------------------------------------------------
-
 CREATE TABLE Section (
     sectionID INTEGER PRIMARY KEY,
     eventID   INTEGER NOT NULL,
@@ -142,10 +128,6 @@ CREATE TABLE Office (
         ON UPDATE CASCADE
         ON DELETE RESTRICT
 );
-
-------------------------------------------------------------
--- ArtWork e relações com Staff/Room
-------------------------------------------------------------
 
 CREATE TABLE ArtWork (
     pieceID    TEXT PRIMARY KEY,
@@ -197,10 +179,6 @@ CREATE TABLE Task (
         ON UPDATE CASCADE
         ON DELETE RESTRICT
 );
-
-------------------------------------------------------------
--- Visit, Experience, Favourite
-------------------------------------------------------------
 
 CREATE TABLE Visit (
     visitID   INTEGER PRIMARY KEY,
