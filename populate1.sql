@@ -309,7 +309,7 @@ INSERT INTO ArtWork (pieceID, title, description, type, state, artistID, warehou
 ('MNSR47', 'Retrato de Antero de Quental', 'Pintura de Alexandre Morais, representativa da produção portuguesa moderna.', 'Painting', 'Stored', 16, 8002, NULL),
 ('MNSR48', 'Ritmos de Cor', 'Pintura de Sónia Delaunay, inserida no âmbito da coleção modernista portuguesa.', 'Painting', 'InUse', 13, NULL, 9002),
 ('MNSR49', 'Paisagem de Outono', 'Pintura de António Carvalho de Silva Porto, pertencente ao acervo do MNSR.', 'Painting', 'Stored', 2, 8003, NULL),
-('MNSR50', 'Pequeno Esboço de Paisagem', 'Estudo de paisagem de Silva Porto, coleção MNSR.', 'Painting', 'InUse', 2, NULL, 9003);
+('MNSR50', 'Pequeno Esboço de Paisagem', 'Estudo de paisagem de Silva Porto, coleção MNSR.', 'Painting', 'InUse', 2, NULL, 9003),
 ('MNSR51', 'Estudo de Mãos', 'Estudo anatómico detalhado em mármore.', 'Sculpture', 'Stored', 1, 8001, NULL),
 ('MNSR52', 'Perfil de Jovem', 'Escultura retratando expressão juvenil.', 'Sculpture', 'Maintenance', 1, 8002, NULL),
 ('MNSR53', 'Cabeça Clássica', 'Peça estudantil de tradição greco-romana.', 'Sculpture', 'Stored', 1, 8003, NULL),
