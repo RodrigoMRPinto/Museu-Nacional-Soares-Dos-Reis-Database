@@ -190,7 +190,7 @@ CREATE TABLE Task (
     name    TEXT NOT NULL,
     date    TEXT NOT NULL,
     description TEXT,
-    PRIMARY KEY (staffID, roomID),
+    PRIMARY KEY (staffID, roomID, date),
     FOREIGN KEY (staffID) REFERENCES Staff(staffID)
         ON UPDATE CASCADE
         ON DELETE RESTRICT,
