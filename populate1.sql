@@ -86,7 +86,7 @@ INSERT INTO Feedback (feedbackID, packRating, opinion, suggestions) VALUES
 (10011, 5, 'Visita extraordinária, aprendi imenso sobre os artistas portugueses.', 'Disponibilizar mais conteúdos online após a visita.'),
 (10012, 4, 'Gostei muito da exposição de escultura, espaço bem organizado.', 'Colocar mais bancos nas salas para poder apreciar com calma.'),
 (10013, 3, 'Experiência interessante, mas a sinalética podia ser mais clara.', 'Melhorar a orientação dentro do museu com mapas e placas.'),
-(10014, 2, 'Algumas salas estavam muito frias, tornou a visita desconfortável.', 'Ajustar a climatização nas salas com mais público.'),
+(10014, 2, 'Algumas salas estavam muito frias, tornou a visita desconfortável.', 'Ajustar a climatização nas salas com mais público.')
 (10015, 5, 'Visita guiada com explicações muito cativantes.', 'Criar visitas temáticas focadas em um único artista.'),
 (10016, 4, 'Boa relação qualidade/preço, recomendo a amigos.', 'Criar um cartão de fidelização para visitantes frequentes.'),
 (10017, 1, 'Tive dificuldade em encontrar parque e o horário não era claro.', 'Melhorar a informação no site e na comunicação externa.'),
@@ -97,7 +97,7 @@ INSERT INTO Feedback (feedbackID, packRating, opinion, suggestions) VALUES
 (10022, 4, 'A escultura “Cabeça Feminina” é fantástica, muito detalhada.', 'Gostaria de ver mais explicações sobre técnicas de escultura.'),
 (10023, 5, 'A pintura “Composição Circular” foi o ponto alto da visita.', 'Organizar uma exposição dedicada ao modernismo abstrato.'),
 (10024, 3, 'Gostei muito de “Aldeia de Montanha”, mas a sala estava demasiado cheia.', 'Dividir horários para reduzir afluência.'),
-(10025, 4, 'A obra “Cena Doméstica” transmite uma paz incrível.', 'Adicionar bancos nas salas de exposição.'),
+(10025, 4, 'A obra “Cena Doméstica” transmite uma paz incrível.', 'Adicionar bancos nas salas de exposição.');
 (10026, 2, 'A escultura “Figura Sentada” não estava bem iluminada.', 'Melhorar a iluminação específica da sala.'),
 (10027, 5, 'Adorei a pintura “Retrato com Xale Azul”, execução impecável.', 'Criar um catálogo digital com detalhes de restauro.'),
 (10028, 4, 'A minha peça preferida foi “Cabeça Clássica”.', 'Incluir vídeos curtos com contexto histórico.'),
@@ -153,7 +153,7 @@ INSERT INTO Artist (artistID, personID, style, description) VALUES
 (11, 30379873, 'Naturalismo', 'Figura central do naturalismo português e autor de grandes obras populares.'),
 (12, 30379874, 'Colecionismo e Curadoria', 'Importante figura ligada ao Porto, defensora das artes e criadora de acervos significativos.'),
 (13, 30379875, 'Abstracionismo/Orfismo', 'Artista internacional ligada a Portugal e ao modernismo europeu.'),
-(14, 30379876, 'Modernismo Português', 'Pintor ligado ao movimento modernista e influenciado por Paris e Amadeo de Souza-Cardoso.'),
+(14, 30379876, 'Modernismo Português', 'Pintor ligado ao movimento modernista e influenciado por Paris e Amadeo de Souza-Cardoso.');
 (15, 30379877, 'Paisagismo Moderno', 'Dedicou-se especialmente à pintura de paisagem e ao ensino artístico.'),
 (16, 30379878, 'Expressionismo Científico', 'Cientista e artista portuense, com obra marcada pela figura humana e crítica social.'),
 (17, 30379913, 'Simbolismo', 'Pintor portuense conhecido pela espiritualidade e emotividade das suas obras.'),
