@@ -64,13 +64,13 @@ INSERT INTO Room (roomID, roomNumber, floor) VALUES
 (9009, '5.01', 5),
 (9010, '5.02', 5);
 
-INSERT INTO VisitPack (packID, name, purchaseDate, price, description) VALUES
-(7001, 'Entrada Individual', '2025-01-10', 8.00, 'Visita geral às coleções permanentes do museu'),
-(7002, 'Pack Família', '2025-02-01', 18.00, 'Entrada para 2 adultos e até 2 crianças, inclui visita guiada básica'),
-(7003, 'Estudante e Professor', '2025-03-05', 4.00, 'Desconto especial mediante apresentação de cartão escolar'),
-(7004, 'Visita Guiada Premium', '2025-02-15', 15.00, 'Tour guiado com curador e acesso a áreas técnicas selecionadas'),
-(7005, 'Pack Amigos do Museu', '2025-03-20', 30.00, 'Livre acesso durante um ano às coleções permanentes e eventos'),
-(7006, 'Pack Grupo Escolar', '2025-01-22', 25.00, 'Entrada para grupos até 15 alunos, inclui material educativo');
+INSERT INTO VisitPack (packID, name, price, description) VALUES
+(7001, 'Entrada Individual', 8.00, 'Visita geral às coleções permanentes do museu'),
+(7002, 'Pack Família', 18.00, 'Entrada para 2 adultos e até 2 crianças, inclui visita guiada básica'),
+(7003, 'Estudante e Professor', 4.00, 'Desconto especial mediante apresentação de cartão escolar'),
+(7004, 'Visita Guiada Premium', 15.00, 'Tour guiado com curador e acesso a áreas técnicas selecionadas'),
+(7005, 'Pack Amigos do Museu', 30.00, 'Livre acesso durante um ano às coleções permanentes e eventos'),
+(7006, 'Pack Grupo Escolar', 25.00, 'Entrada para grupos até 15 alunos, inclui material educativo');
 
 INSERT INTO Feedback (feedbackID, packRating, opinion, suggestions) VALUES
 (10001, 5, 'Excelente experiência, visita guiada muito enriquecedora.', 'Criar mais sessões interativas com o público.'),
@@ -111,9 +111,8 @@ INSERT INTO Feedback (feedbackID, packRating, opinion, suggestions) VALUES
 (10036, 5, 'A escultura “Perfil de Jovem” transmite grande delicadeza emocional.', 'Promover uma exposição apenas de esculturas realistas.');
 
 
-
 INSERT INTO Person (personID, name, birthDate, nationality, gender) VALUES
-(30379863, 'António Soares dos Reis', '1847-10-14', 'Portuguese', 'M'),
+(30379923, 'António Soares dos Reis', '1847-10-14', 'Portuguese', 'M'),
 (30379864, 'António Carvalho de Silva Porto', '1850-11-11', 'Portuguese', 'M'),
 (30379865, 'João Marques de Oliveira', '1853-10-31', 'Portuguese', 'M'),
 (30379866, 'Aurélia de Sousa', '1866-06-13', 'Portuguese', 'F'),
@@ -297,7 +296,7 @@ INSERT INTO ArtWork (pieceID, title, description, type, state, artistID, warehou
 ('MNSR35', 'Cena familiar', 'Cena de quotidiano familiar, referida na lista com coleção MNSR.', 'Painting', 'Stored', 4, 8002, NULL),
 ('MNSR36', 'Estudo (Mãos da Artista)', 'Estudo em óleo sobre tela, inv. 706 Pin MNSR.', 'Painting', 'Maintenance', 4, 8001, NULL),
 ('MNSR37', 'Descida da Cruz', 'Obra de Domingos Sequeira exposta no Museu Nacional de Soares dos Reis.', 'Painting', 'InUse', 9, NULL, 9007),
-('MNSR38', 'Cecilia', 'Pintura de 1882 de Henrique Pousão, destacada na apresentação do MNSR.', 'Painting', 'Stored', 5, 8003, NULL);
+('MNSR38', 'Cecilia', 'Pintura de 1882 de Henrique Pousão, destacada na apresentação do MNSR.', 'Painting', 'Stored', 5, 8003, NULL),
 ('MNSR39', 'Senhora Vestida de Preto', 'Pintura de Henrique Pousão (1882) considerada uma das obras-chave do MNSR.', 'Painting', 'InUse', 5, NULL, 9005),
 ('MNSR40', 'Casas Brancas de Capri', 'Paisagem de Henrique Pousão (1882) onde domina a luz mediterrânica.', 'Painting', 'Stored', 5, 8001, NULL),
 ('MNSR41', 'Flor Agreste', 'Escultura de António Soares dos Reis, pertencente ao acervo do MNSR.', 'Sculpture', 'InUse', 1, NULL, 9001),
@@ -345,18 +344,16 @@ INSERT INTO ArtWork (pieceID, title, description, type, state, artistID, warehou
 ('MNSR83', 'Estrutura Geométrica Azul', 'Composição abstrata baseada em formas rigorosas.', 'Painting', 'Stored', 24, 8002, NULL),
 ('MNSR84', 'Cidade Fragmentada', 'Pintura abstrata lírica com retículas e transparências.', 'Painting', 'InUse', 25, NULL, 9004),
 ('MNSR85', 'Mulher com Lenço Vermelho', 'Retrato moderno inspirado na figura feminina e na cultura popular.', 'Painting', 'Stored', 26, 8003, NULL);
-INSERT INTO StaffRoomNumber (staffID, roomID) VALUES
--- Direção e coordenação
-(1, 9009),   -- Diretora do museu
-(2, 9009),   -- Coordenação de Conservação e Restauro
-(3, 9008),   -- Comunicação e Marketing
-(4, 9008),   -- Técnico de montagem e logística
-(5, 9009),   -- Curadoria
-(6, 9009),   -- Administração e finanças
-(7, 9001),   -- Atendimento ao público / bilhética
-(8, 9010),   -- Guia cultural
 
--- Seguranças distribuídos
+INSERT INTO StaffRoomNumber (staffID, roomID) VALUES
+(1, 9009),  
+(2, 9009),  
+(3, 9008),  
+(4, 9008),  
+(5, 9009),   
+(6, 9009),   
+(7, 9001),   
+(8, 9010),   
 (9, 9007),
 (10, 9002),
 (11, 9003),
