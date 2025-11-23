@@ -210,7 +210,6 @@ CREATE TABLE Visitor (
 CREATE TABLE VisitPack (
     packID INTEGER PRIMARY KEY,
     name TEXT NOT NULL,
-    purchaseDate DATE,
     price REAL,
     description TEXT
 );
