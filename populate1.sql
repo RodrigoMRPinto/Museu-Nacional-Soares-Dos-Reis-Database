@@ -279,7 +279,7 @@ INSERT INTO ArtWork (pieceID, title, description, type, state, artistID, warehou
 ('MNSR17', 'Ritmos de Cor', 'Exploração abstracionista do movimento', 'Painting', 'Stored', 13, 8001, NULL),
 ('MNSR18', 'Praia no Norte', 'Paisagem modernista luminosa', 'Painting', 'InUse', 14, NULL, 9002),
 ('MNSR19', 'Ribeira do Porto', 'Enquadramento realista urbano', 'Painting', 'Stored', 15, 8002, NULL),
-('MNSR20', 'Ciência e Humanidade', 'Obra simbólica e crítica social', 'Painting', 'Maintenance', 16, 8003, NULL);
+('MNSR20', 'Ciência e Humanidade', 'Obra simbólica e crítica social', 'Painting', 'Maintenance', 16, 8003, NULL),
 ('MNSR21', 'O Desterrado', 'Escultura em mármore, obra-prima de Soares dos Reis e peça emblemática do museu.', 'Sculpture', 'InUse', 1, NULL, 9001),
 ('MNSR22', 'Flor Agreste', 'Escultura em mármore referida como pertencente ao Museu Nacional Soares dos Reis.', 'Sculpture', 'Stored', 1, 8001, NULL),
 ('MNSR23', 'Caim', 'Escultura de forte dramatismo expressivo, presente no MNSR.', 'Sculpture', 'InUse', 1, NULL, 9001),
